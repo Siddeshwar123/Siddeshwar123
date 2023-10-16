@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>WebProject1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index2.html</welcome-file>
+    <welcome-file>index3.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>Program1</servlet-name>
+  <servlet-class>com.tap.Program1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Program1</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>callProgram2</servlet-name>
+  <servlet-class>com.tap.</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>callProgram2</servlet-name>
+  <url-pattern>/call1</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>callProgram3</servlet-name>
+  <servlet-class>com.tap.Program3</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>callProgram3</servlet-name>
+  <url-pattern>/call2</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>callCalculate</servlet-name>
+  <servlet-class>com.tap.sum</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>callCalculate</servlet-name>
+  <url-pattern>/calculate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>callCalculate2</servlet-name>
+  <servlet-class>com.tap.product</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>callCalculate2</servlet-name>
+  <url-pattern>/calculate2</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>  
+        <servlet-name>display</servlet-name>  
+        <servlet-class>com.tap.display</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>display</servlet-name>  
+        <url-pattern>/display</url-pattern>  
+    </servlet-mapping>  
+  
+  
+  <servlet>  
+        <servlet-name>classUpdate</servlet-name>  
+        <servlet-class>com.tap.Update</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>classUpdate</servlet-name>  
+        <url-pattern>/update</url-pattern>  
+    </servlet-mapping> 
+    
+   <!--<servlet>  
+        <servlet-name>classLogin2</servlet-name>  
+        <servlet-class>com.tap.Login</servlet-class>  
+        
+        <init-param>
+        	<param-name>password</param-name>
+        	<param-value>siddu@123</param-value>
+        </init-param>
+        
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>classLogin2</servlet-name>  
+        <url-pattern>/login2</url-pattern>  
+    </servlet-mapping> -->
+  
+  	<servlet>  
+        <servlet-name>classHomePage</servlet-name>  
+        <servlet-class>com.tap.HomePage</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>classHomePage</servlet-name> 
+        <url-pattern>/homePage</url-pattern>
+    </servlet-mapping>  
+    
+    <servlet>  
+        <servlet-name>classDelete</servlet-name>  
+        <servlet-class>com.tap.Delete</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>classDelete</servlet-name> 
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>  
+  
+  
+</web-app>
